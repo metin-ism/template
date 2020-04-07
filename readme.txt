@@ -1,39 +1,36 @@
 Setup
 
-1 New project in webstorm
+1 Create a new project in webstorm
 
 
-2 new project in gitlab
+2 Create a new project in github
 
 
-3 Initialise new git project: git init
+3 Initialise a new git project: git init
 
 
-4 Create .gitignore file with content of https://gitignore.io/api/node,webstorm
+4 Create a .gitignore file with the content of https://gitignore.io/api/node,webstorm
 
 
-5 Created a new commit with all changed files (.gitignore and .idea/* files) vcs > commit
+5 Add your github address as a default (origin) remote vcs > git > remotes
 
 
-6 Added gitlab as a default (origin) remote vcs > git > remotes
+6 Create a readme file with the instructions that we have followed
 
 
-7 pushed commit to remote vcs > git > push
+7 Create a new commit with all changed files (.gitignore and .idea/* files) vcs > commit
 
 
-8 Created readme with the above lines
-
-
-
-Yarn
-
-1 yarn init
+8 Pushed commit to remote vcs > git > push
 
 
 
-Project structure
-
-1 volg de instructies op https://webpack.js.org/guides/getting-started/
+Npm Setup
 
 
-2 voeg style toe via de instructies op https://webpack.js.org/guides/asset-management/
+1 Follow the instructions on https://webpack.js.org/guides/getting-started/
+
+
+2 For style these instructions https://webpack.js.org/guides/asset-management/
+
+3 You can add more intresting things like babel, sass, en plugins... https://webpack.js.org/concepts/
