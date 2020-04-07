@@ -1,0 +1,19 @@
+body{
+    background: #F9F9E5;
+}
+.container{
+    min-height: 1500px;
+    background: black
+}
+header{
+    background: green;
+    height: 300px;
+}
+nav{
+    height: 50px;
+    background: yellow;
+}
+div .sbody{
+    height: 800px;
+    background: #F9F9E5;
+}
