@@ -1,19 +1,48 @@
+@import "https://use.fontawesome.com/releases/v5.8.1/css/all.css";
+a, nav ol, nav ul, form ol, form ul{
+    text-decoration: none;
+    list-style: none;
+}
 body{
     background: #F9F9E5;
+    font: 100%/1 'Indie Flower', cursive;
 }
 .container{
     min-height: 1500px;
-    background: black
+    max-width: 1200px;
+    margin: 0 auto;
 }
 header{
-    background: green;
     height: 300px;
 }
 nav{
-    height: 50px;
+position: relative;
+}
+nav ul{
     background: yellow;
+    position: absolute;
+    top:-16px;
+    right: 0;
+
+}
+nav ul li{
+background: #F9F9E5;
+
+
+}
+.header-text{
+    text-align: center;
+    width: 100%;
+    padding-top: 150px;
 }
 div .sbody{
     height: 800px;
     background: #F9F9E5;
+}
+section{
+    height: 200px;
+    padding: 5px;
+}
+section:nth-of-type(2),section:nth-of-type(4) {
+    background: blue;
 }
