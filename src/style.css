@@ -1,48 +1,330 @@
 @import "https://use.fontawesome.com/releases/v5.8.1/css/all.css";
-a, nav ol, nav ul, form ol, form ul{
+a, nav ol, nav ul, form ol, form ul, li{
     text-decoration: none;
     list-style: none;
 }
+
+
 body{
     background: #F9F9E5;
     font: 100%/1 'Indie Flower', cursive;
+    margin: 0;
 }
 .container{
     min-height: 1500px;
     max-width: 1200px;
     margin: 0 auto;
+    overflow: hidden;
 }
+
 header{
+    min-height: 550px;
+    background: url("images/h1-center.png") no-repeat 0/cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+
+nav{
+    position: absolute;
+    right: 0;
+    top: -14px;
+}
+
+
+nav ul#menu{
+    position: relative;
+    right: -100px;
+    transition: .5s;
+    padding-left: 300px;
+    opacity: 0.9;
+}
+
+#menu li a{
+    transition: .5s;
+    color: blue;
+
+}
+#menu li:hover{
+    background: rgba(47,47,48,.5);
+}
+
+#menu li{
+    padding: 30px 0 82.3px 0;
+    width: 100%;
+    right: 10px;
+}
+
+
+i#hamburger{
+    font-size: 35px;
+    position: relative;
+    top: 15px;
+    right: -155px;
+}
+
+.header-text{
+    width: 100%;
+    margin-top: 400px;
+}
+
+.s1{
+    display: block;
+    text-align: center;
+    align-items: center;
+    padding: 90px 50px 0 50px;
+    height: 180px;
+}
+.sec{
+    margin-top: -246px;
+}
+
+div .sbody{min-height: 800px;}
+
+.circle{
+    min-height: 150px;
+    text-align: center;
+    align-items: center;
+}
+footer{
+    min-height: 200px;
+    display: flex;
+    justify-content: center;
+    background: #2A2B30;
+}
+
+.cSlide{
+    border-radius: 100%;
+}
+
+
+.a1 {background: url("https://images.pexels.com/photos/3591557/pexels-photo-3591557.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260 no-repeat 0/cover");}
+
+.a2 {background: url("https://images.pexels.com/photos/4590785/pexels-photo-4590785.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260");}
+
+.a3 {background: url("https://images.pexels.com/photos/192926/pexels-photo-192926.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");}
+
+.a4 {background: url("https://images.pexels.com/photos/3576112/pexels-photo-3576112.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");}
+
+
+
+/***********************************/
+
+
+.wrap,.wrap2,
+#slider, #cSlider,
+.slide-content {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+    width: 100%;
+    height: 100vh;
+}
+.wrap, .wrap2{
+    position: relative;
+}
+figure.slide, figure.cSlide{
+    height: 500px;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+
+
+
+}
+div.slide1{
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.9)), url(images/metin.jpg);
+}
+div.slide2{
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.9)), url(images/familly.jpg);
+}
+div.slide3{
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.9)), url(images/vacation.jpg);
+}
+div.slide4{
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.9)), url(images/love.png);
+    background-position: left;
+}
+.slide-content{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    color: #717171;
+}
+figure div:hover{
+    transition: .5s;
+    transition-timing-function: ease-in-out;
+}
+figure div{
+    transition: .5s;
+
+}
+figure div:hover figcaption{
+    transition: .5s;
+    font-size: 30px;
+    color: white;
+}
+figure div figcaption{
+    transition: ease-out .5s;
+}
+.arrow:hover + figure div{
+    background: rgba(76, 175, 80, 0.1);
+}
+
+.arrow, .cArrow{
+    cursor: pointer;
+    height: 0px;
+    width: 0px;
+    position: absolute;
+    top: 31%;
+    display: flex;
+    color: antiquewhite;
+    background: cadetblue;
+    font-size: 50px;
+    text-align: center;
+}
+.arrow:hover, cArrow:hover {
+    color: #717171;
+    text-shadow: 1px 1px black;
+    transition: background-color 0.6s ease;
+
+}
+
+#arrow-left, #cArrow-left{
+    left: 5px;
+}
+#arrow-right, #cArrow-right{
+    right: 49px;
+}
+.dots{
+    width: 100%;
+    height: 50px;
+    position: relative;
+    top: 0px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.dot {
+    position: relative;
+    cursor: pointer;
+    height: 13px;
+    width: 13px;
+    margin: 0 2px;
+    border-radius: 50%;
+    background: #F9F9E5;
+    transition: background-color 0.6s ease;
+    bottom: 40px;
+}
+.active, .dot:hover {
+    background:#717171;
+}
+
+aside{
+    width: 100%;
+    min-height: 500px;
+    background: #717171;
+}
+aside section article{
+    display: flex;
+    flex-direction: column;
+}
+aside section article figure{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #F9F9E5;
+    padding: 10px;
+    position: relative;
+    transition: ease-in-out .2s;
+    cursor: pointer;
+}
+
+aside section article figure:hover figcaption{
+    position: absolute;
+    top: 150px;
+    font-size: 20px;
+}
+aside section article figure:hover{
+}
+aside section article figure:hover div{
+    padding: 10px;
+    margin: -10px;
+    opacity: .2;
+}
+aside section article figure div{
+    background: blue;
+    width: 100%;
     height: 300px;
 }
-nav{
-position: relative;
+aside section article figure:nth-of-type(1) div{background: url("images/curriculumVitae.jpg");}
+aside section article figure:nth-of-type(2) div{background: url("images/phoneFix.jpg");}
+aside section article figure:nth-of-type(3) div{
+    background: url("images/svenska.jpg");
+    background-position: top;
 }
-nav ul{
+aside section article figure:nth-of-type(4) div{background: url("images/it.jpg");}
+
+aside section article figure:nth-of-type(1) div, aside section article figure:nth-of-type(2) div, aside section article figure:nth-of-type(3) div, aside section article figure:nth-of-type(4) div{
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+aside section article figure figcaption{
+    padding: 10px 0 0 0; }
+
+/**************************************
+aside{
     background: yellow;
-    position: absolute;
-    top:-16px;
-    right: 0;
-
-}
-nav ul li{
-background: #F9F9E5;
-
-
-}
-.header-text{
-    text-align: center;
     width: 100%;
-    padding-top: 150px;
+    height: 500px;
 }
-div .sbody{
-    height: 800px;
-    background: #F9F9E5;
+aside figure{
+    background: green;
+    height: 400px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    overflow: hidden;
 }
-section{
-    height: 200px;
-    padding: 5px;
+aside figure div{
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.9)), url(images/metin.jpg);
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: ease-out .5s;
 }
-section:nth-of-type(2),section:nth-of-type(4) {
-    background: blue;
+aside figure div:hover{
+    transition: .5s;
+    filter: brightness(50%);
+    transition-timing-function: ease-in-out;
+    margin: -15px;
 }
+aside figure div:hover figcaption{
+    transition: .5s;
+    font-size: 30px;
+    color: white;
+    filter: brightness(100%);
+}
+aside figure div figcaption{
+    transition: ease-out .5s;
+}
+*/

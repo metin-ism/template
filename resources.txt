@@ -1,0 +1,242 @@
+/*
+@media screen and (max-width: 830px) {
+
+    header {
+        background: url("images/h1-center.png") no-repeat 0/cover;
+        background-position: center;
+    }
+
+    .header-text {
+        margin-top: 400px;
+    }
+
+    .a1 {background: url("https://images.pexels.com/photos/3591557/pexels-photo-3591557.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260 no-repeat 0/cover");}
+
+    .a2 {background: url("https://images.pexels.com/photos/4590785/pexels-photo-4590785.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260");}
+
+    .a3 {background: url("https://images.pexels.com/photos/192926/pexels-photo-192926.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");}
+
+    .a4 {background: url("https://images.pexels.com/photos/3576112/pexels-photo-3576112.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");}
+
+    article {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+
+    }
+
+    .slider {
+        position: relative;
+        width: 420%;
+        font-size: 0;
+        animation: 40s slidy infinite;
+
+
+    }
+
+    .slider figure {
+        width: 24%;
+        height: auto;
+        display: inline-block;
+        position: inherit;
+        margin: 0;
+    }
+
+    .slider img {
+        width: 100%;
+        height: auto;
+    }
+
+    figcaption {
+        position: absolute;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.3);
+        color: #fff;
+        width: 100%;
+        font-size: 2rem;
+        padding: .6rem;
+    }
+
+    #prevBtn {
+        position: absolute;
+        top: 50%;
+    }
+
+    #nextBtn {
+        position: absolute;
+        top: 50%;
+        right: 0;
+
+    }
+}
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body{
+    background: #F9F9E5;
+    font: 100%/1 'Indie Flower', cursive;
+}
+.container{
+    min-height: 1500px;
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
+header{
+    min-height: 550px;
+    background: url("images/h1-Right.png") no-repeat 0/cover;
+    display: flex;
+    position: relative;
+    align-items: center;
+    text-align: center;
+    margin: 10px 0 0 0;
+    transition: .5s;
+
+}
+
+
+nav{
+    position: absolute;
+    right: 0;
+    top: -14px;
+}
+nav ul{
+    display: block;
+}
+
+.header-text{
+    width: 100%;
+    transition: 1s;
+}
+
+.s1{
+    display: block;
+    text-align: center;
+    align-items: center;
+    padding-top: 90px;
+    background: blue;
+    height: 180px;
+}
+
+div .sbody{min-height: 800px;}
+
+.circle{
+    min-height: 150px;
+    text-align: center;
+    align-items: center;
+}
+
+.circle article{border-radius: 100%;}
+
+.circle .a1, .circle .a2, .circle .a3, .circle .a4{
+    background: url("https://images.pexels.com/photos/1169754/pexels-photo-1169754.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500 1x") no-repeat 0/cover;
+    width: 200px;
+    height: 200px;
+}
+footer{
+    min-height: 200px;
+    display: flex;
+    justify-content: center;
+    background: #2A2B30;
+}
+
+@media screen and (max-width: 830px) {
+
+    header {
+        background: url("images/h1-center.png") no-repeat 0/cover;
+        background-position: center;
+    }
+
+    .header-text {
+        margin-top: 400px;
+    }
+
+    .a1 {background: url("https://images.pexels.com/photos/3591557/pexels-photo-3591557.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260 no-repeat 0/cover");}
+
+    .a2 {background: url("https://images.pexels.com/photos/4590785/pexels-photo-4590785.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260");}
+
+    .a3 {background: url("https://images.pexels.com/photos/192926/pexels-photo-192926.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");}
+
+    .a4 {background: url("https://images.pexels.com/photos/3576112/pexels-photo-3576112.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");}
+
+    article {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+
+    }
+
+
+    .slider {
+        position: relative;
+        width: 416.7%;
+        font-size: 0;
+        animation: 40s slidy infinite;
+
+    }
+
+    .slider figure {
+        width: 24%;
+        height: auto;
+        display: inline-block;
+        position: inherit;
+        margin: 0;
+    }
+
+    .slider img {
+        width: 800px;
+        height: 400px;
+        height: auto;
+    }
+
+    figcaption {
+        position: absolute;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.3);
+        color: #fff;
+        width: 100%;
+        font-size: 2rem;
+        padding: .6rem;
+    }
+
+    #prevBtn {
+        position: absolute;
+        top: 50%;
+
+    }
+
+    #nextBtn {
+        position: absolute;
+        top: 50%;
+        right: 0;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .slider figure figcaption {
+        font-size: 1.2rem;
+    }
+}

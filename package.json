@@ -28,6 +28,8 @@
     "webpack-dev-server": "^3.10.3"
   },
   "dependencies": {
-    "lodash": "^4.17.15"
+    "image-js": "^0.21.9",
+    "lodash": "^4.17.15",
+    "webpack-jquery-ui": "^2.0.1"
   }
 }
