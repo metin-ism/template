@@ -1,5 +1,6 @@
 const path = require('path');
 const webpack = require('webpack');
+const videoJs = require("video.js")
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 module.exports = {
@@ -40,6 +41,17 @@ module.exports = {
                          "style-loader",
                          "css-loader",
                          "sass-loader"
+                     ]
+                 },
+                 {
+                     test: /\.(mov|mp4)$/,
+                     use: [
+                         {
+                             loader: 'file-loader',
+                             options: {
+                                 name: '[name].[ext]'
+                             }
+                         }
                      ]
                  }
      ],

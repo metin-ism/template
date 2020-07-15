@@ -25,8 +25,6 @@ function reset() {
         reset();
         sliderImages[current - 1].style.display = 'block';
         current--;
-        dots.style.transition = "1s";
-
     }
 
     arrowLeft.addEventListener('click', function () {
@@ -50,17 +48,6 @@ function reset() {
         slideRight();
     });
 
-function showSlides() {
-    if (current> sliderImages.length) {current = 1}
-    for (i = 0; i < dots.length; i++) {
-        $(".dot").css("background", "grey");
-        setTimeout(showSlides, 1000); // Change image every 8 seconds
-    }
-}
-
-$(".dot").click(function(){
-    $("p").show();
-});
     init();
 
 
@@ -109,4 +96,17 @@ $(".dot").click(function(){
     menuButton.addEventListener('click', onMenuClick);
 }());
 
-
+$(function () {
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+            var smile = document.querySelectorAll('.me')[0];
+            smile.style.backgroundImage = 'url(src/images/me-laugh.png)';
+        } else if ($(this).scrollTop() > 50) {
+            var laugh = document.querySelectorAll('.me')[0];
+            laugh.style.backgroundImage = 'url(src/images/me-smile.png)';
+        } else {
+            var me = document.querySelectorAll('.me')[0];
+            me.style.backgroundImage = 'url(src/images/me.png)';
+        }
+    });
+});
