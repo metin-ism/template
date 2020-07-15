@@ -100,13 +100,13 @@ $(function () {
     $(window).scroll(function () {
         if ($(this).scrollTop() > 100) {
             var smile = document.querySelectorAll('.me')[0];
-            smile.style.backgroundImage = 'url(src/images/me-laugh.png)';
+            smile.style.backgroundImage = 'url(../dist/me-laugh.png)';
         } else if ($(this).scrollTop() > 50) {
             var laugh = document.querySelectorAll('.me')[0];
-            laugh.style.backgroundImage = 'url(src/images/me-smile.png)';
+            laugh.style.backgroundImage = 'url(../dist/me-smile.png)';
         } else {
             var me = document.querySelectorAll('.me')[0];
-            me.style.backgroundImage = 'url(src/images/me.png)';
+            me.style.backgroundImage = 'url(../dist/me.png)';
         }
     });
 });

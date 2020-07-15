@@ -282,6 +282,7 @@ aside section article figure figcaption{
     line-height: 40px;
 
 }
+/*extra*************************************/
 section.extra{
     min-height: 500px;
     text-align: center;
@@ -290,7 +291,15 @@ section.extra{
 section.extra article img.emoji{
     width: 250px;
     border-radius: 50%;
+    box-shadow: 0 0 5px .5px;
+    transition: .5s;
 }
+
+section.extra article img.emoji:hover {
+    box-shadow: 0 0 10px 1px;
+    transition: .9s;
+}
+
 section.extra article p{
     padding: 50px 100px 50px 100px;
 }
@@ -306,9 +315,7 @@ footer{
 /*@media800*********************************/
 
 @media screen and (min-width: 800px){
-    aside section{
 
-    }
     aside section article{
         display: grid;
         grid-template: auto /auto auto;
